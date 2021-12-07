@@ -36,8 +36,7 @@ namespace dataGridStudentNoteCalculatorFormApp
                 {
                 MessageBox.Show("olumlu");
                 decimal ortalama = (not1 + not2 + not3) / 3;
-                
-                int idsss = frm.dataGridView1.Rows.Add();
+                                int idsss = frm.dataGridView1.Rows.Add();
                 frm.dataGridView1.Rows[idsss].Cells[0].Value = idsss.ToString();
                 frm.dataGridView1.Rows[idsss].Cells[1].Value = not1.ToString();
                 frm.dataGridView1.Rows[idsss].Cells[2].Value = not2.ToString();
@@ -46,34 +45,24 @@ namespace dataGridStudentNoteCalculatorFormApp
                 if (ortalama > 45)
                 {
                     frm.dataGridView1.Rows[idsss].Cells[5].Value = "Geçti";
-
                 }
                 else
                 {
                     frm.dataGridView1.Rows[idsss].Cells[5].Value = "Kaldı";
-
                 }
                 if (sayaca==1)
                 {
-
                 }
                 else
                 {
                     sayaca++;
                     frm.Show();
-
                 }
-
-
             }
             else
             {
                 MessageBox.Show("olumsuz");
             }
-
-           
-
-         
         }
     }
 }
