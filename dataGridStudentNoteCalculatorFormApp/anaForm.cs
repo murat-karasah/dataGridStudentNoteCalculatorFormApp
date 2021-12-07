@@ -15,7 +15,6 @@ namespace dataGridStudentNoteCalculatorFormApp
     {
         public listeForm frm = new listeForm();
 
-        public static int ids = 0;
 
         public static int sayaca = 0;
 
@@ -32,7 +31,6 @@ namespace dataGridStudentNoteCalculatorFormApp
 
         public void hesaplama()
         {
-            ids++;
             decimal not1, not2, not3;
             if (decimal.TryParse(textBox1.Text, out not1)&& decimal.TryParse(textBox2.Text, out not2) && decimal.TryParse(textBox3.Text, out not3))
                 {
@@ -40,7 +38,7 @@ namespace dataGridStudentNoteCalculatorFormApp
                 decimal ortalama = (not1 + not2 + not3) / 3;
                 
                 int idsss = frm.dataGridView1.Rows.Add();
-                frm.dataGridView1.Rows[idsss].Cells[0].Value = ids.ToString();
+                frm.dataGridView1.Rows[idsss].Cells[0].Value = idsss.ToString();
                 frm.dataGridView1.Rows[idsss].Cells[1].Value = not1.ToString();
                 frm.dataGridView1.Rows[idsss].Cells[2].Value = not2.ToString();
                 frm.dataGridView1.Rows[idsss].Cells[3].Value = not3.ToString();
@@ -52,7 +50,7 @@ namespace dataGridStudentNoteCalculatorFormApp
                 }
                 else
                 {
-                    frm.dataGridView1.Rows[ids].Cells[5].Value = "Kaldı";
+                    frm.dataGridView1.Rows[idsss].Cells[5].Value = "Kaldı";
 
                 }
                 if (sayaca==1)
