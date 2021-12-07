@@ -98,13 +98,12 @@ namespace dataGridStudentNoteCalculatorFormApp
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn not1;
         private System.Windows.Forms.DataGridViewTextBoxColumn not2;
         private System.Windows.Forms.DataGridViewTextBoxColumn not3;
         private System.Windows.Forms.DataGridViewTextBoxColumn ortalama;
         private System.Windows.Forms.DataGridViewTextBoxColumn durum;
+        public System.Windows.Forms.DataGridView dataGridView1;
     }
 }
